@@ -2,21 +2,21 @@ language: python
 python:  
   - "3.8"
 
-# command to install dependencies
-install:
-  - pip install -r requirements.txt
+# # command to install dependencies
+# install:
+#   - pip install -r requirements.txt
 
-script:
-  - python3 manage.py migrate
-  - python3 manage.py test
+# script:
+#   - python3 manage.py migrate
+#   - python3 manage.py test
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
-  secret_access_key: $SECRETACCESSKEY
-  region: "us-west-2"  
-  app: "pipe"
-  env: "pipe-env"
-  bucket_name: "elasticbeanstalk-us-west-2-483486020413"
-  on:
-    branch: master
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id: $ACCESSKEYID
+#   secret_access_key: $SECRETACCESSKEY
+#   region: "us-west-2"  
+#   app: "pipe"
+#   env: "pipe-env"
+#   bucket_name: "elasticbeanstalk-us-west-2-483486020413"
+#   on:
+#     branch: master
