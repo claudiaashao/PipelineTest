@@ -5,6 +5,7 @@ python:
 env:
   global:
     - $SECRET_KEY
+    - $DEBUG
 
 install:
   - pip install -r requirements.txt
