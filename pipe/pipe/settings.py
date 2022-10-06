@@ -28,6 +28,7 @@ DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
     'pipe-env.us-west-2.elasticbeanstalk.com',
+    '127.0.0.1'
 ]
 
 
