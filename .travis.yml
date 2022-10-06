@@ -6,9 +6,11 @@ python:
 install:
   - pip install -r requirements.txt
 
+before_script:
+  - python manage.py migrate
+
 script:
-  - python3 manage.py migrate
-  - python3 manage.py test
+  - coverage run --source=pipe manage.py test
 
 # deploy:
 #   provider: elasticbeanstalk
