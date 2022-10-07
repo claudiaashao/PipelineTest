@@ -22,4 +22,4 @@ deploy:
     env: "pipe-env"
     bucket_name: "elasticbeanstalk-us-west-2-483486020413"
     on:
-      branch: master
+      all_branches: true
